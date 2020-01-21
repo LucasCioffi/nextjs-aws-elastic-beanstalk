@@ -7,24 +7,24 @@ branches:
   - master
 deploy:
   - provider: elasticbeanstalk
-    access_key_id: ${AWS_ACCESS_KEY_ID}
+    access_key_id: abc
     secret_access_key:
-      secure: ${AWS_SECRET_ACCESS_KEY}
-    region: "ap-south-1"       
-    app: "next-app"                     
-    env: "next-app-staging"                     
-    bucket_name: ${AWS_S3_BUCKET} 
+      secure: abc
+    region: "ap-south-1"
+    app: "next-app"
+    env: "next-app-staging"
+    bucket_name: abc
     on:
       branch: "staging"
 
   - provider: elasticbeanstalk
-    access_key_id: ${AWS_ACCESS_KEY_ID}
+    access_key_id: abc
     secret_access_key:
-      secure: ${AWS_SECRET_ACCESS_KEY}
-    region: "ap-south-1"       
-    app: "next-app"                     
-    env: "next-app-production"                     
-    bucket_name: ${AWS_S3_BUCKET}
+      secure: abc
+    region: "ap-south-1"
+    app: "next-app"
+    env: "next-app-production"
+    bucket_name: abc
     on:
       branch: "master"
 
